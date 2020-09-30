@@ -1,0 +1,141 @@
+/*Reset básico na pagina*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  :root {
+    --primary: #2A7AE4;
+    --black: #000000;
+    --blackLighter: #9E9E9E;
+    --grayLight: #F5F5F5;
+    --grayMedium: #e5e5e5;
+    --grayDark: #141414;
+    --white: #ffffff;
+    --frontEnd: #6BD1ff;
+    --backEnd: #00C86F;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    color: inherit;
+  }
+  
+  #root {
+    min-height: calc(100vh - var(--bodyPaddingTop));
+    display: flex;
+    flex-direction: column;
+  }
+
+.menu {
+  width: 100%;
+  height: 94px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background: var(--black);
+  color:  var(--grayLight);
+}
+body {
+  --bodyPaddingTop: 94px;
+  padding-top: var(--bodyPaddingTop);
+}
+@media (max-width: 800px) {
+  .Menu {
+    height: 40px;
+    justify-content: center;
+  }
+  body {
+    --bodyPaddingTop: 40px;
+    padding-top: var(--bodyPaddingTop);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.ButtonLinkTable {
+  color: var(--black);
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 2px 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity .3s;
+}
+.ButtonLinkTable:hover,
+.ButtonLinkTable:focus {
+  opacity: .5;
+  color: red;
+}
+
+
+.ButtonLink {
+  color: var(--black);
+  border: 3px solid var(--black);
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 2px 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity .3s;
+  margin-left: 38%;
+}
+.ButtonLink:hover,
+.ButtonLink:focus {
+  opacity: .5;
+}
+
+@media (max-width: 800px) {
+  a.ButtonLink {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 0;
+    background: var(--primary);
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+  }
+}

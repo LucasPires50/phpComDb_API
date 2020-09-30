@@ -1,0 +1,76 @@
+
+.label{
+    color: #1b0f0f;
+    height: 20px;
+    top: 0;
+    left: 16px;
+    
+    margin-left: 9%;
+    
+    transform-origin: 0% 0%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    
+    transition: .1s ease-in-out;
+}
+
+.input {
+    background: #53585D;
+    color: #F5F5F5;
+    display: block;
+    width: 80%;
+    height: 57px;
+    font-size: 18px;
+    
+    outline: 0;
+    border: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid #53585D;
+    
+    padding: 16px 16px;
+    margin-bottom: 0px;
+    margin-left: 9%;
+        
+    resize: none;
+    border-radius: 4px;
+    transition: border-color .3s;
+
+}
+
+.ButtonLinkPage {
+    color: var(--black);
+    border: 3px solid var(--black);
+    background-color: var(--white);
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity .3s;
+    margin-left: 12%;
+
+  }
+  .ButtonLinkPage:hover,
+  .ButtonLinkPage:focus {
+    opacity: .5;
+  }
+  
+  @media (max-width: 800px) {
+    a.ButtonLinkPage {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-left: 0;
+      background: var(--primary);
+      border-radius: 0;
+      border: 0;
+      text-align: center;
+    }
+  }
